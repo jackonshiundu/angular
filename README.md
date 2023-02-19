@@ -1,4 +1,4 @@
-## Directives
+### Directives
 
 This are used to change the behavour and appearance of our dom
 
@@ -17,4 +17,21 @@ This are used to change the behavour and appearance of our dom
 # Attribute Directives-can modify the dom but cant remove or add things to the dom
 
 ngClass
-ngClass
+ngStyle
+
+### Pipes
+
+Are used for data transformation
+they dont chnage actual object
+
+## Types
+
+datepipe
+uppercasepipe
+lowercasepipe
+currencyPipe
+titleCase
+decimalpipe
+percentagepipe
+jsonpipe-for debugging
+slicepipe

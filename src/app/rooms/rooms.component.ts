@@ -31,6 +31,7 @@ export class RoomsComponent implements OnInit {
       photos: 'https://images.unplash.com/photo',
       chickInTimeLDate: new Date('11-nov-2023'),
       checkoutTime: new Date('21-nov-2023'),
+      rating: 2.5,
     },
     {
       roomNumber: 4,
@@ -40,6 +41,7 @@ export class RoomsComponent implements OnInit {
       photos: 'https://images.unplash.com/photo',
       chickInTimeLDate: new Date('1-nov-2023'),
       checkoutTime: new Date('5-nov-2023'),
+      rating: 2.5,
     },
     {
       roomNumber: 8,
@@ -49,6 +51,7 @@ export class RoomsComponent implements OnInit {
       photos: 'https://images.unplash.com/photo',
       chickInTimeLDate: new Date('7-nov-2023'),
       checkoutTime: new Date('29-nov-2023'),
+      rating: 3.4,
     },
   ];
   ngOnInit(): void {}

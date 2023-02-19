@@ -17,19 +17,24 @@
       <th>Room Price</th>
       <th>Room Amenities</th>
       <th>Check in</th>
+      <th>Amenities</th>
+      <th>Ratings</th>
       <th>Odd/Even</th>
     </tr>
     <tr
       [ngClass]="e ? 'even' : 'odd'"
       *ngFor="let room of roomList; let e = even; let o = odd"
     >
-      <td>{{ room.roomNumber }}</td>
-      <td>{{ room.roomType }}</td>
-      <td>{{ room.price }}</td>
+      <td>{{ room.roomNumber | percent }}</td>
+      <td>{{ room.roomType | uppercase }}</td>
+      <td>{{ room.price | currency : "KES" }}</td>
       <td>{{ room.chickInTimeLDate.toLocaleString() }}</td>
-      <td>{{ room.checkoutTime.toLocaleString() }}</td>
+      <td>{{ room.checkoutTime | date : "shortDate" }}</td>
+      <td>{{ room.amenities | slice : 0 : 4 }}</td>
+      <td>{{ room.rating | number : "1.0-0" }}</td>
       <td>{{ e ? "Even" : "Odd" }}</td>
     </tr>
   </table>
 </div>
+{{ roomList | json }}
 <button (click)="toggle()">Toggle</button>
